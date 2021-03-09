@@ -1,0 +1,9 @@
+<h1>portfolio</h1>
+<h2>shubham's personal portfolio</h2>
+
+{% for project in projects %}
+    <img src = {{ project.image.url }} />
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.description }}</p>
+    <b><a href = '{{ project.url }}'>visit</a></b>
+{% endfor %}
